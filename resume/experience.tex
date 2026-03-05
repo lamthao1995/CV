@@ -1,28 +1,18 @@
 \cvsection{Work Experience} % SECTION TITLE
 \begin{cventries} % CONTENT
   \cvsimpleentry
-    {\textbf{XXX, Senior Software Engineer - Backend}} % Job title
-    {Singapore, Nov. 2023 - Mar.2025} % Date
+    {\textbf{Netko, AI Engineer}} % Job title
+    {Ha Noi, Mar. 2025 - Mar.2026} % Date
     {
       \begin{cvitems} % Description
-        \item {Work with \textbf{more than 200 millions of users}.}
-        \item {XXX.}
-        \item {XXX.}
-        \item {Tech Stacks: Go, Grpc, Kafka, Mysql, Redis, Kibana, Grafana.}
+        \item {Designed and developed a scalable AI agent system using a \textbf{microservices architecture} to deliver intelligent automation for \textbf{supply chain optimization}, \textbf{IT software workflows}, and \textbf{coding interviews}, achieving low-latency inference and high concurrency while maintaining high availability. The product was presented at the \href{https://www.linkedin.com/posts/bigm-kk_supplychaindesign-supplychainoptimization-activity-7262605306784813056-VKYM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGNdCGoBivrb0vpmUYAIo2o8013qSROCoWo}{Supply Chain Design Conference Tokyo 2025}.}
+        \item {Designed hybrid SQL and vector database schemas with \textbf{tenant isolation controls} to address data security challenges in multi-tenant and accelerate RAG-based memory retrieval, achieving \textbf{sub-200ms P95 vector retrieval latency}, \textbf{sub-2s P99 end-to-end RAG latency}, \textbf{5,000+ TPS}, and zero cross-tenant data leakage.}
+        \item {Leveraged \textbf{Celery’s distributed asynchronous task queue} with async I/O and the httpx client to address \textbf{batched LLM inference and I/O-bound workloads} in multi-request AI agent scenarios, resulting in an optimized throughput of \textbf{1,000+ inferences/min} and \textbf{sub-20ms API task dispatch latency}, effectively handling burst traffic without dropping requests.}
+        \item {Developed a high-performance inference stack for AI models on \textbf{vLLM and TEI}, integrating queued task processing to handling high-concurrency LLM workloads, achieving a \textbf{sub-200ms P95 Time-To-First-Token (TTFT)},  \textbf{50+ Tokens/sec TPOT}, , and \textbf{over 85 percent semantic cache hit rate}, significantly reducing GPU compute costs.}
+        \item {Developed an end-to-end observability framework for large-scale AI platforms using Grafana, Prometheus, and OpenTelemetry (Jaeger), processing distributed traces and high-cardinality metrics to enable bottleneck identification and performance optimization, achieving a \textbf{50% reduction in MTTR}.}
+        \item {Tech Stack: FastAPI, PostgreSQL, Milvus, Redis, LlamaIndex, LangGraph, Celery, RabbitMQ, Docker, vLLM, Grafana, Prometheus, OpenTelemetry, MinIO, Locust.}
       \end{cvitems}
     }
-  \cvsimpleentry
-    {\textbf{XXX, Senior Software Engineer - Backend}} % Job title
-    {Singapore, Sep. 2022 - Aug.2023} % Date
-    {
-      \begin{cvitems} % Description
-        \item {XXX.}
-        \item {XXX.}
-        \item {XXX.}
-        \item {Tech Stacks: Go.}
-      \end{cvitems}
-    }
-
 
 \end{cventries}
 %docker run -u $UID:$GID --rm -v $PWD:/work csmith/awesome-cv-builder
