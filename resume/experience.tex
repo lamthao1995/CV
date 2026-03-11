@@ -7,21 +7,21 @@
       \begin{cvitems} % Description       
         \item {Architected and built the backend for a scalable \textbf{microservices-based AI multi-agent system} enabling intelligent automation for \textbf{supply chain optimization} and \textbf{IT workflows}. Delivered high availability and low-latency inference; the product was showcased at the \textit{\href{https://www.linkedin.com/posts/bigm-kk_supplychaindesign-supplychainoptimization-activity-7262605306784813056-VKYM/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGNdCGoBivrb0vpmUYAIo2o8013qSROCoWo}{Supply Chain Design Conference Tokyo 2025}}.}
         \item {Designed hybrid SQL and vector DB schemas with strict \textbf{tenant isolation controls} to secure multi-tenant environments and optimize RAG-based memory retrieval, achieving \textbf{sub-300ms P95 vector search latency}, \textbf{sub-2s P99 end-to-end RAG latency}, and zero cross-tenant data leakage.}
-        \item {Implemented a \textbf{distributed asynchronous task queue} with non-blocking async I/O (\texttt{httpx}) to manage \textbf{batched LLM inference workloads and I/O-bound workloads}. Effectively handled burst traffic without request loss, achieving a throughput of \textbf{1,000+ inferences/min} and \textbf{sub-20ms API task dispatch latency}.}
-        \item {Engineered a high-performance inference stack using \textbf{vLLM and TEI}, integrating queued task processing for high-concurrency workloads, achieving \textbf{sub-300ms P99 TTFT},  \textbf{50+ tokens/s (TPS)} per request,  \textbf{250+ TPS} throughput, and enhanced GPU utilization.}
-        \item {Developed an end-to-end observability framework using \textbf{Grafana, Prometheus, and OpenTelemetry (Jaeger)} for monitoring distributed traces, agent state transitions, and high-cardinality metrics, leveraging trace-based analysis to identify and resolve LLM bottlenecks, achieving \textbf{75\%} inference latency reduction and \textbf{33\%} lower agent wait times.}
+        \item {Implemented a \textbf{distributed asynchronous task queue} with non-blocking async I/O (\texttt{httpx}) to manage \textbf{batched LLM inference and I/O-bound workloads}. Effectively handled burst traffic without request loss, achieving a throughput of \textbf{800 inferences/min}, \textbf{sub-30ms API task dispatch latency}, and \textbf{27s average agent task} completion time (including memory retrieval and LLM reasoning)s.}
+        \item {Engineered a high-performance inference stack using \textbf{vLLM and TEI}, integrating queued task processing for high-concurrency workloads, achieving \textbf{sub-300ms P99 TTFT},  \textbf{sub-20ms TPOT}, and  \textbf{200+ TPS} overall throughput.}
+        \item {Developed an end-to-end observability framework using \textbf{Grafana, Prometheus, and OpenTelemetry (Jaeger)} for monitoring distributed traces, agent state transitions, and high-cardinality metrics. Leveraged trace-based analysis to isolate LLM bottlenecks within the multi-model stack (Embedding, Reranker, LLM), achieving a \textbf{75\%} inference latency reduction and \textbf{33\%} lower agent wait times.}
         \item {\textbf{Tech Stack:} FastAPI, PostgreSQL, Milvus, Redis, LlamaIndex, LangGraph, Celery, RabbitMQ, Docker, vLLM, Grafana, Prometheus, OpenTelemetry, MinIO, Locust.}
       \end{cvitems}
     }
   \cvsimpleentry
-    {\textbf{Toshiba Software Development VietNam, AI Engineer}} % Job title
+    {\textbf{Toshiba Software Development Vietnam, AI Engineer}} % Job title
     {Ha Noi, Nov. 2020 - Feb. 2025} % Date
     {
       \begin{cvitems} % Description       
-        \item {Developed recommendation system using rule-based matching, Word2vec transfer learning, LDA, constraint clustering, graph matching, and collaborative filtering for candidate-job pairing in Toshiba's digital marketing apps, handling feature analysis and workflows to boost quality and match accuracy.}
-        \item {Developed deep learning models using OpenCV, YOLO, DeepLSD, and template matching for circuit component detection (text, symbols, lines) in drawing readers, handling imbalanced datasets via proposed methods to boost precision and reliability.}
-        \item {Developed optimization engine using Spring Boot, Google OR-Tools (Java), and microservices for warehouse execution efficiency, processing logistics workflows to cut operational costs and streamline ordering.}
-        \item {\textbf{Tech Stack:} TensorFlow, PyTorch, Gensim, Networkx, Numpy, Pandas, OpenCV, API (Restful/gRPC).}
+        \item {Built a recommendation system using rule-based matching, Word2vec transfer learning, LDA, constraint clustering, graph matching, and collaborative filtering for candidate-job pairing in Toshiba's digital marketing apps, handling feature analysis and workflows to boost quality and match accuracy.}
+        \item {Trained deep learning models using OpenCV, YOLO, DeepLSD, and template matching for circuit component detection (text, symbols, lines) in drawing readers, handling imbalanced datasets via proposed methods to boost precision and reliability.}
+        \item {Developed an optimization engine using Spring Boot, Google OR-Tools (Java), and microservices for warehouse execution efficiency, processing logistics workflows to cut operational costs and streamline ordering.}
+        \item {\textbf{Tech Stack:} TensorFlow, PyTorch, Gensim, NetworkX, NumPy, Pandas, OpenCV, RESTful API.}
       \end{cvitems}
     }
   \cvsimpleentry
@@ -29,10 +29,10 @@
     {Ha Noi, Sep. 2018 - Oct. 2020} % Date
     {
       \begin{cvitems} % Description       
-        \item {Developed segmentation model using Albumentations, OpenCV, Flask, UNet, and VGGNet for tooth segmentation on X-ray images, applying data augmentation and noise removal to achieve accurate bone delineation.}
-        \item {Developed classification system using PyTorch CNNs (SqueezeNet, VGG), and Docker for signature/stamp detection in paintings, addressing imbalanced data via augmentation and F1 to boost performance and deployment.}
-        \item {Developed OCR systems using OpenCV, DNNs (PixelLink, DC-GAN) for flyer/ID OCR in SmartOCR, applying EAST labeling, Japanese tuning, and survey methods to handle noise, augment data, format outputs, and boost training.}
-        \item {\textbf{Tech Stack:} TensorFlow, PyTorch, Numpy, Pandas, OpenCV, Docker.}
+        \item {Developed a segmentation model using Albumentations, OpenCV, Flask, UNet, and VGGNet for tooth segmentation on X-ray images, applying data augmentation and noise removal to achieve accurate bone delineation.}
+        \item {Developed a classification system using PyTorch CNNs (SqueezeNet, VGG), and Docker for signature/stamp detection in paintings, addressing imbalanced data via augmentation and optimizing for the F1 score to boost performance and deployment.}
+        \item {Developed a OCR system using OpenCV, DNNs (PixelLink, DC-GAN) for flyer/ID OCR in SmartOCR, applying EAST labeling, Japanese tuning, and survey methods to handle noise, augment data, format outputs, and boost training.}
+        \item {\textbf{Tech Stack:} TensorFlow, PyTorch, NumPy, Pandas, OpenCV, Docker.}
       \end{cvitems}
     }
 \end{cventries}
